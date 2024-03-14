@@ -1,4 +1,5 @@
-from flask import Flask, render_template, url_for
+from flask import *
+
 
 app = Flask(__name__)
 
@@ -7,9 +8,10 @@ app = Flask(__name__)
 def home():
     return render_template('home.html')
 
+
 @app.route("/EDA")
 def about():
-    return "<p>now we're in about say hi bitch</p>"
+    return render_template('EDA.html')
 
 
 if __name__=="__main__":

@@ -1,7 +1,10 @@
 {% extends "layout.html" %}
 {% block content %}
-    <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-        <h1 class="h2">Welcome to GUI-EDA Website</h1>
+<div class="row">
+    <div class="col-md-8">
+        <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+            <h1 class="h2">Welcome to GUI-EDA Website</h1>
+        </div>
     </div>
 
     <div class="row">
@@ -11,12 +14,10 @@
 
         </div>
     </div>
-    
+    <div class="input-group">
+        <input type="file" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+        <button class="btn btn-outline-secondary" type="button" id="inputGroupFileAddon04">Upload</button>
+      </div>
 {% endblock content %}
 
-{% block content1 %}
-<div class="input-group mb-3">
-    <label class="input-group-text" for="inputGroupFile01">Upload</label>
-    <input type="file" class="form-control" id="inputGroupFile01">
-  </div> 
-{% endblock content1 %}
+

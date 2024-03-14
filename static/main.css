@@ -78,3 +78,9 @@ body {
   .account-heading {
     font-size: 2.5rem;
   }
+
+  /* Add margin between the two divs */
+.row .col > div {
+    margin-bottom: 20px; /* Adjust this value as needed */
+}
+
